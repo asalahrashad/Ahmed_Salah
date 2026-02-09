@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Ahmed Salah</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Ahmed <span>Salah</span></a>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+            <h1 class="section-title">Data Analytics Projects</h1>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 40px; color: var(--text-muted);">
+                A collection of my work in Data Analysis, Visualization, and Predictive Modeling.
+                Click "View Details" to explore the business problem, tools used, and key insights for each project.
+            </p>
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <!-- Neon Thumbnail: Sales -->
+                        <div class="neon-thumb thumb-sales">
+                            <i class="fas fa-chart-line neon-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sales Performance Dashboard</h3>
+                        <div class="tags">
+                            <span>Power BI</span>
+                            <span>SQL</span>
+                            <span>Excel</span>
+                        </div>
+                        <button class="btn-text" onclick="openModal('modal-1')">View Details &rarr;</button>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <!-- Neon Thumbnail: Churn -->
+                        <div class="neon-thumb thumb-churn">
+                            <i class="fas fa-user-times neon-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Customer Churn Analysis</h3>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>Power BI</span>
+                        </div>
+                        <button class="btn-text" onclick="openModal('modal-2')">View Details &rarr;</button>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <!-- Neon Thumbnail: Finance -->
+                        <div class="neon-thumb thumb-finance">
+                            <i class="fas fa-coins neon-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Financial Performance Analysis</h3>
+                        <div class="tags">
+                            <span>Power BI</span>
+                            <span>Excel</span>
+                            <span>SQL</span>
+                        </div>
+                        <button class="btn-text" onclick="openModal('modal-3')">View Details &rarr;</button>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <!-- Neon Thumbnail: HR -->
+                        <div class="neon-thumb thumb-hr">
+                            <i class="fas fa-users-cog neon-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>HR Analytics Dashboard</h3>
+                        <div class="tags">
+                            <span>Power BI</span>
+                            <span>SQL</span>
+                            <span>Excel</span>
+                        </div>
+                        <button class="btn-text" onclick="openModal('modal-4')">View Details &rarr;</button>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <!-- Neon Thumbnail: Marketing -->
+                        <div class="neon-thumb thumb-marketing">
+                            <i class="fas fa-bullhorn neon-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Marketing Campaign Analysis</h3>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Power BI</span>
+                            <span>Excel</span>
+                        </div>
+                        <button class="btn-text" onclick="openModal('modal-5')">View Details &rarr;</button>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card">
+                    <div class="project-image">
+                        <!-- Neon Thumbnail: Predictive -->
+                        <div class="neon-thumb thumb-predict">
+                            <i class="fas fa-brain neon-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Predicting Customer Behavior</h3>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Power BI</span>
+                        </div>
+                        <button class="btn-text" onclick="openModal('modal-6')">View Details &rarr;</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Modals -->
+    <!-- Modal 1 -->
+    <div id="modal-1" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-1')">&times;</span>
+            <h2>Sales Performance Dashboard</h2>
+
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h4><i class="fas fa-bullseye"></i> Business Problem</h4>
+                    <p>Management needed a clear view of sales performance to understand revenue fluctuations and
+                        identify underperforming products and regions.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-database"></i> Dataset Description</h4>
+                    <p>Sales transaction data including date, product, category, region, revenue, quantity sold, and
+                        discounts.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-tools"></i> Tools Used</h4>
+                    <p>Power BI, SQL, Excel</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-cogs"></i> Solution Approach</h4>
+                    <ul>
+                        <li>Cleaned and transformed raw sales data</li>
+                        <li>Built a star-schema data model</li>
+                        <li>Defined core KPIs (Revenue, Growth Rate, Average Order Value)</li>
+                        <li>Designed an interactive Power BI dashboard with filters by time and region</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-lightbulb"></i> Key Insights & Results</h4>
+                    <ul>
+                        <li>Identified that 20% of products generated over 60% of total revenue</li>
+                        <li>Detected regions with declining performance due to high discount rates</li>
+                        <li>Enabled data-driven pricing and inventory decisions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal-2" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-2')">&times;</span>
+            <h2>Customer Churn Analysis</h2>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h4><i class="fas fa-bullseye"></i> Business Problem</h4>
+                    <p>The company experienced increasing customer churn without a clear understanding of the root
+                        causes.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-database"></i> Dataset Description</h4>
+                    <p>Customer data including demographics, subscription duration, service usage, complaints, and churn
+                        status.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-tools"></i> Tools Used</h4>
+                    <p>Python, SQL, Power BI</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-cogs"></i> Solution Approach</h4>
+                    <ul>
+                        <li>Performed Exploratory Data Analysis (EDA) to identify churn patterns</li>
+                        <li>Analyzed customer behavior prior to churn</li>
+                        <li>Segmented customers based on churn risk</li>
+                        <li>Visualized results in a dashboard for stakeholders</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-lightbulb"></i> Key Insights & Results</h4>
+                    <ul>
+                        <li>Low-usage customers showed significantly higher churn rates</li>
+                        <li>Customer complaints were a major churn driver</li>
+                        <li>Provided retention strategies to reduce churn risk</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal-3" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-3')">&times;</span>
+            <h2>Financial Performance Analysis</h2>
+            <div class="modal-body">
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-bullseye"></i> Business Problem</h4>
+                    <p>Executives needed better visibility into profitability, costs, and financial trends across
+                        departments.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-database"></i> Dataset Description</h4>
+                    <p>Financial records including revenue, expenses, profit, department, and time period.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-tools"></i> Tools Used</h4>
+                    <p>Power BI, Excel, SQL</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-cogs"></i> Solution Approach</h4>
+                    <ul>
+                        <li>Analyzed monthly and yearly financial trends</li>
+                        <li>Compared profitability across departments</li>
+                        <li>Built financial KPIs and variance analysis metrics</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-lightbulb"></i> Key Insights & Results</h4>
+                    <ul>
+                        <li>Identified high-cost, low-profit departments</li>
+                        <li>Detected seasonal spikes in operational expenses</li>
+                        <li>Supported budget optimization and cost-control decisions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal-4" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-4')">&times;</span>
+            <h2>HR Analytics Dashboard</h2>
+            <div class="modal-body">
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-bullseye"></i> Business Problem</h4>
+                    <p>High employee turnover was impacting productivity and operational stability.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-database"></i> Dataset Description</h4>
+                    <p>Employee data including age, department, salary, performance rating, tenure, and attrition
+                        status.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-tools"></i> Tools Used</h4>
+                    <p>Power BI, SQL, Excel</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-cogs"></i> Solution Approach</h4>
+                    <ul>
+                        <li>Analyzed attrition rates by department and tenure</li>
+                        <li>Correlated salary and performance metrics</li>
+                        <li>Designed an interactive HR dashboard for management</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-lightbulb"></i> Key Insights & Results</h4>
+                    <ul>
+                        <li>Highest attrition occurred within the first two years of employment</li>
+                        <li>Clear relationship between compensation and retention</li>
+                        <li>Recommended targeted retention and compensation strategies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div id="modal-5" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-5')">&times;</span>
+            <h2>Marketing Campaign Analysis</h2>
+            <div class="modal-body">
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-bullseye"></i> Business Problem</h4>
+                    <p>The marketing team needed to evaluate campaign effectiveness and optimize return on investment
+                        (ROI).</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-database"></i> Dataset Description</h4>
+                    <p>Marketing campaign data including channel, cost, impressions, conversions, and revenue.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-tools"></i> Tools Used</h4>
+                    <p>Python, Power BI, Excel</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-cogs"></i> Solution Approach</h4>
+                    <ul>
+                        <li>Calculated conversion rates and ROI per channel</li>
+                        <li>Compared campaign performance across platforms</li>
+                        <li>Identified high-performing and underperforming campaigns</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-lightbulb"></i> Key Insights & Results</h4>
+                    <ul>
+                        <li>Digital channels delivered the highest ROI at lower cost</li>
+                        <li>Some low-budget campaigns outperformed high-spend campaigns</li>
+                        <li>Improved marketing budget allocation decisions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div id="modal-6" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-6')">&times;</span>
+            <h2>Predicting Customer Behavior</h2>
+            <div class="modal-body">
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-bullseye"></i> Business Problem</h4>
+                    <p>The company wanted to identify customers most likely to make a purchase to improve targeting and
+                        sales efficiency.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-database"></i> Dataset Description</h4>
+                    <p>Historical customer data including purchase history, engagement metrics, and demographic
+                        features.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-tools"></i> Tools Used</h4>
+                    <p>Python, Pandas, Scikit-learn, Power BI</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-cogs"></i> Solution Approach</h4>
+                    <ul>
+                        <li>Performed feature engineering and data preparation</li>
+                        <li>Built and evaluated a predictive classification model</li>
+                        <li>Visualized prediction results and customer segments</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-lightbulb"></i> Key Insights & Results</h4>
+                    <ul>
+                        <li>Identified high-probability customer segments</li>
+                        <li>Improved targeting for marketing and sales campaigns</li>
+                        <li>Supported data-driven decision-making for customer outreach</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ahmed. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ahmed-sal4h/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/asalahrashad" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.upwork.com/freelancers/~01423555736b857804?mp_source=share" target="_blank"><i
+                        class="fab fa-upwork"></i></a>
+                <a href="mailto:asalahrash4d@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

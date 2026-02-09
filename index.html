@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Analyst Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Ahmed <span>Salah</span></a>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-container">
+                <div class="hero-text">
+                    <span class="welcome-text slide-in-left">Welcome to my portfolio!</span>
+                    <h1 class="slide-in-left" style="animation-delay: 0.2s">Hello, my name's <span
+                            class="highlight">Ahmed.</span></h1>
+                    <p class="slide-in-left" style="animation-delay: 0.4s">I'm a Data Analyst turning complex datasets
+                        into actionable business insights. Currently
+                        specializing in Python, SQL, and Power BI.</p>
+                    <div class="cta-buttons">
+                        <a href="https://drive.google.com/file/d/106Rd0pNWRreaECy-DDk5i57MIT2x2XQB/view?usp=sharing"
+                            target="_blank" class="btn btn-primary">Download CV</a>
+                        <a href="projects.html" class="btn btn-outline-hero">See my work &rarr;</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/profile.png" alt="Ahmed - Data Analyst" class="profile-img animate-float">
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills & Tech Stack Section -->
+        <section id="stack" class="container">
+            <h2 class="section-title reveal">My Tech Stack & Skills</h2>
+            <div class="stack-grid">
+
+                <!-- Technical Skills -->
+                <div class="stack-card reveal">
+                    <h3><i class="fas fa-wrench"></i> Technical Skills</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fas fa-chart-bar" style="color: #F2C811;"></i>
+                            <span>Power BI</span>
+                            <small>DAX, Modeling</small>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database" style="color: #00758F;"></i>
+                            <span>SQL</span>
+                            <small>Joins, CTEs</small>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-python" style="color: #3776AB;"></i>
+                            <span>Python</span>
+                            <small>Pandas, NumPy</small>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-file-excel" style="color: #217346;"></i>
+                            <span>Excel</span>
+                            <small>Pivot Tables</small>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-chart-pie" style="color: #E91E63;"></i>
+                            <span>Data Viz</span>
+                            <small>Dashboards</small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Analytics Skills -->
+                <div class="stack-card reveal">
+                    <h3><i class="fas fa-chart-line"></i> Analytics Skills</h3>
+                    <ul class="skill-list">
+                        <li>Business Problem Framing</li>
+                        <li>KPI Definition & Metrics</li>
+                        <li>Exploratory Data Analysis (EDA)</li>
+                        <li>Trend & Root Cause Analysis</li>
+                        <li>Data Storytelling & Insights</li>
+                        <li>Decision Support Analysis</li>
+                    </ul>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="stack-card reveal">
+                    <h3><i class="fas fa-handshake"></i> Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li>Clear Communication</li>
+                        <li>Business-Oriented Thinking</li>
+                        <li>Critical Thinking</li>
+                        <li>Attention to Detail</li>
+                        <li>Presentation Skills</li>
+                        <li>Time Management</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="container">
+            <h2 class="section-title reveal">Featured Projects</h2>
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <!-- Neon Thumbnail: Sales -->
+                        <div class="neon-thumb thumb-sales">
+                            <i class="fas fa-chart-line neon-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Sales Performance Dashboard</h3>
+                        <div class="tags">
+                            <span>Power BI</span>
+                            <span>SQL</span>
+                            <span>Excel</span>
+                        </div>
+                        <button class="btn-text" onclick="openModal('modal-1')">View Details &rarr;</button>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <!-- Neon Thumbnail: Churn -->
+                        <div class="neon-thumb thumb-churn">
+                            <i class="fas fa-user-times neon-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Customer Churn Analysis</h3>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>Power BI</span>
+                        </div>
+                        <button class="btn-text" onclick="openModal('modal-2')">View Details &rarr;</button>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <!-- Neon Thumbnail: Finance -->
+                        <div class="neon-thumb thumb-finance">
+                            <i class="fas fa-coins neon-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Financial Performance Analysis</h3>
+                        <div class="tags">
+                            <span>Power BI</span>
+                            <span>Excel</span>
+                            <span>SQL</span>
+                        </div>
+                        <button class="btn-text" onclick="openModal('modal-3')">View Details &rarr;</button>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <!-- Neon Thumbnail: HR -->
+                        <div class="neon-thumb thumb-hr">
+                            <i class="fas fa-users-cog neon-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>HR Analytics Dashboard</h3>
+                        <div class="tags">
+                            <span>Power BI</span>
+                            <span>SQL</span>
+                            <span>Excel</span>
+                        </div>
+                        <button class="btn-text" onclick="openModal('modal-4')">View Details &rarr;</button>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <!-- Neon Thumbnail: Marketing -->
+                        <div class="neon-thumb thumb-marketing">
+                            <i class="fas fa-bullhorn neon-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Marketing Campaign Analysis</h3>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Power BI</span>
+                            <span>Excel</span>
+                        </div>
+                        <button class="btn-text" onclick="openModal('modal-5')">View Details &rarr;</button>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card reveal">
+                    <div class="project-image">
+                        <!-- Neon Thumbnail: Predictive -->
+                        <div class="neon-thumb thumb-predict">
+                            <i class="fas fa-brain neon-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Predicting Customer Behavior</h3>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Pandas</span>
+                            <span>Power BI</span>
+                        </div>
+                        <button class="btn-text" onclick="openModal('modal-6')">View Details &rarr;</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+
+                <!-- Summary -->
+                <div class="about-intro reveal">
+                    <p class="lead-text">
+                        Eager to apply my data analysis skills in a dynamic environment. Skilled in <strong>SQL, Excel,
+                            Data Visualization (Power BI, Tableau)</strong> and basic understanding of
+                        <strong>Python</strong> for data analysis. Aspiring to contribute to data-driven decision-making
+                        processes and eager to develop further in data analytics.
+                    </p>
+                </div>
+
+                <hr class="divider">
+
+                <!-- Experience -->
+                <h3 class="h2-title"><i class="fas fa-briefcase"></i> Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <span class="timeline-date">October 2024</span>
+                        <h3>Power BI Expert with Data Analysis</h3>
+                        <h4>Upwork (Freelance)</h4>
+                        <p>Transforming complex data into clear, actionable insights through engaging and interactive
+                            dashboards. Uncovering trends, patterns, and actionable insights, presenting these findings
+                            in a way that's easily understandable using Power BI.</p>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <span class="timeline-date">August 2024</span>
+                        <h3>Clean, Analyze and Validate Data</h3>
+                        <h4>Upwork (Freelance)</h4>
+                        <p>Extracted, transformed, analyzed, and visualized 311 noise complaints data for 2023 to
+                            include it in an online report.</p>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <span class="timeline-date">May 2024</span>
+                        <h3>Visualize Data in Excel</h3>
+                        <h4>Upwork (Freelance)</h4>
+                        <p>Converted data into interactive 3D maps to track the locations of teams in different regions
+                            in Europe.</p>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <!-- Scholarships & Training -->
+                <h3 class="h2-title"><i class="fas fa-graduation-cap"></i> Scholarships & Training</h3>
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <span class="timeline-date">August - October 2024</span>
+                        <h3>Data Analysis: Skills for the Freelance Professional</h3>
+                        <h4>NTI (National Telecommunication Institute)</h4>
+                        <ul>
+                            <li><strong>Master SQL:</strong> Understand and apply SQL for querying and managing
+                                databases.</li>
+                            <li><strong>Excel Expertise:</strong> Leverage advanced Excel functions for data cleaning,
+                                analysis, and visualization.</li>
+                            <li><strong>Power BI and Tableau Mastery:</strong> Create interactive and insightful
+                                dashboards and reports.</li>
+                            <li><strong>Integrated Projects:</strong> Apply skills in real-world scenarios to develop
+                                comprehensive solutions.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item reveal">
+                        <span class="timeline-date">August 2024</span>
+                        <h3>Data Analytics Program</h3>
+                        <h4>ALX</h4>
+                        <ul>
+                            <li><strong>ALX Foundations:</strong> Learn key leadership and professional skills for the
+                                workplace.</li>
+                            <li><strong>Google Sheets:</strong> Develop essential data modeling skills to unlock
+                                meaningful insights.</li>
+                            <li><strong>SQL:</strong> Query and transform databases using Structured Query Language.
+                            </li>
+                            <li><strong>Power BI:</strong> Translating complex data into compelling visual narratives.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <!-- Education -->
+                <h3 class="h2-title"><i class="fas fa-university"></i> Education</h3>
+                <div class="timeline">
+                    <div class="timeline-item reveal">
+                        <span class="timeline-date">Expected September 2026</span>
+                        <h3>Bachelor's Degree in Computer Science</h3>
+                        <h4>Faculty of Computers and Artificial Intelligence, EELU University</h4>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <!-- Certifications -->
+                <h3 class="h2-title"><i class="fas fa-certificate"></i> Certifications</h3>
+                <div class="cert-grid">
+                    <div class="cert-item block-reveal">Google Data Analytics Certificate (Coursera)</div>
+                    <div class="cert-item block-reveal">IBM Data Analytics Certificate (Coursera)</div>
+                    <div class="cert-item block-reveal">Microsoft Power BI Data Analytics (Coursera)</div>
+                    <div class="cert-item block-reveal">Tableau Business Intelligence Analyst (Coursera)</div>
+                    <div class="cert-item block-reveal">Power BI Data Analyst (Datacamp)</div>
+                    <div class="cert-item reveal">Python Data Analyst (Datacamp)</div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="container">
+            <h2 class="section-title reveal">Get In Touch</h2>
+            <p style="text-align: center; margin-bottom: 3rem; color: var(--text-muted);">
+                Interested in working together? Fill out the form below or connect with me on LinkedIn.
+            </p>
+
+            <form class="contact-form reveal" action="mailto:asalahrash4d@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <!-- Email field removed as requested -->
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+            </form>
+
+            <div class="social-icons-container reveal">
+                <a href="https://www.linkedin.com/in/ahmed-sal4h/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/asalahrashad" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.upwork.com/freelancers/~01423555736b857804?mp_source=share" target="_blank"
+                    class="social-icon">
+                    <i class="fab fa-upwork"></i>
+                </a>
+                <a href="mailto:asalahrash4d@gmail.com" class="social-icon">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </section>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ahmed. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/ahmed-sal4h/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/asalahrashad" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.upwork.com/freelancers/~01423555736b857804?mp_source=share" target="_blank"><i
+                        class="fab fa-upwork"></i></a>
+                <a href="mailto:asalahrash4d@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Modal 1 -->
+    <div id="modal-1" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-1')">&times;</span>
+            <h2>Sales Performance Dashboard</h2>
+
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h4><i class="fas fa-bullseye"></i> Business Problem</h4>
+                    <p>Management needed a clear view of sales performance to understand revenue fluctuations and
+                        identify underperforming products and regions.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-database"></i> Dataset Description</h4>
+                    <p>Sales transaction data including date, product, category, region, revenue, quantity sold, and
+                        discounts.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-tools"></i> Tools Used</h4>
+                    <p>Power BI, SQL, Excel</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-cogs"></i> Solution Approach</h4>
+                    <ul>
+                        <li>Cleaned and transformed raw sales data</li>
+                        <li>Built a star-schema data model</li>
+                        <li>Defined core KPIs (Revenue, Growth Rate, Average Order Value)</li>
+                        <li>Designed an interactive Power BI dashboard with filters by time and region</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-lightbulb"></i> Key Insights & Results</h4>
+                    <ul>
+                        <li>Identified that 20% of products generated over 60% of total revenue</li>
+                        <li>Detected regions with declining performance due to high discount rates</li>
+                        <li>Enabled data-driven pricing and inventory decisions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div id="modal-2" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-2')">&times;</span>
+            <h2>Customer Churn Analysis</h2>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h4><i class="fas fa-bullseye"></i> Business Problem</h4>
+                    <p>The company experienced increasing customer churn without a clear understanding of the root
+                        causes.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-database"></i> Dataset Description</h4>
+                    <p>Customer data including demographics, subscription duration, service usage, complaints, and churn
+                        status.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-tools"></i> Tools Used</h4>
+                    <p>Python, SQL, Power BI</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-cogs"></i> Solution Approach</h4>
+                    <ul>
+                        <li>Performed Exploratory Data Analysis (EDA) to identify churn patterns</li>
+                        <li>Analyzed customer behavior prior to churn</li>
+                        <li>Segmented customers based on churn risk</li>
+                        <li>Visualized results in a dashboard for stakeholders</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-lightbulb"></i> Key Insights & Results</h4>
+                    <ul>
+                        <li>Low-usage customers showed significantly higher churn rates</li>
+                        <li>Customer complaints were a major churn driver</li>
+                        <li>Provided retention strategies to reduce churn risk</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div id="modal-3" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-3')">&times;</span>
+            <h2>Financial Performance Analysis</h2>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h4><i class="fas fa-bullseye"></i> Business Problem</h4>
+                    <p>The finance team required a detailed analysis of profit margins and expense tracking to optimize
+                        budget allocation.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-database"></i> Dataset Description</h4>
+                    <p>Financial records including revenue, COGS, operating expenses, and net profit over a 3-year
+                        period.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-tools"></i> Tools Used</h4>
+                    <p>Power BI, Excel, SQL</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-cogs"></i> Solution Approach</h4>
+                    <ul>
+                        <li>Consolidated financial data from multiple sources</li>
+                        <li>Calculated key financial ratios (Gross Margin, Net Profit Margin, ROI)</li>
+                        <li>Created a trend analysis dashboard to forecast future performance</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-lightbulb"></i> Key Insights & Results</h4>
+                    <ul>
+                        <li>Highlighted a 15% increase in operational costs year-over-year</li>
+                        <li>Identified profitable vs. non-profitable business units</li>
+                        <li>Recommended cost-saving measures that could improve margins by 5%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div id="modal-4" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-4')">&times;</span>
+            <h2>HR Analytics Dashboard</h2>
+            <div class="modal-body">
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-bullseye"></i> Business Problem</h4>
+                    <p>High employee turnover was impacting productivity and operational stability.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-database"></i> Dataset Description</h4>
+                    <p>Employee data including age, department, salary, performance rating, tenure, and attrition
+                        status.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-tools"></i> Tools Used</h4>
+                    <p>Power BI, SQL, Excel</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-cogs"></i> Solution Approach</h4>
+                    <ul>
+                        <li>Analyzed attrition rates by department and tenure</li>
+                        <li>Correlated salary and performance metrics</li>
+                        <li>Designed an interactive HR dashboard for management</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-lightbulb"></i> Key Insights & Results</h4>
+                    <ul>
+                        <li>Highest attrition occurred within the first two years of employment</li>
+                        <li>Clear relationship between compensation and retention</li>
+                        <li>Recommended targeted retention and compensation strategies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div id="modal-5" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-5')">&times;</span>
+            <h2>Marketing Campaign Analysis</h2>
+            <div class="modal-body">
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-bullseye"></i> Business Problem</h4>
+                    <p>The marketing team needed to evaluate campaign effectiveness and optimize return on investment
+                        (ROI).</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-database"></i> Dataset Description</h4>
+                    <p>Marketing campaign data including channel, cost, impressions, conversions, and revenue.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-tools"></i> Tools Used</h4>
+                    <p>Python, Power BI, Excel</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-cogs"></i> Solution Approach</h4>
+                    <ul>
+                        <li>Calculated conversion rates and ROI per channel</li>
+                        <li>Compared campaign performance across platforms</li>
+                        <li>Identified high-performing and underperforming campaigns</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-lightbulb"></i> Key Insights & Results</h4>
+                    <ul>
+                        <li>Digital channels delivered the highest ROI at lower cost</li>
+                        <li>Some low-budget campaigns outperformed high-spend campaigns</li>
+                        <li>Improved marketing budget allocation decisions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div id="modal-6" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeModal('modal-6')">&times;</span>
+            <h2>Predicting Customer Behavior</h2>
+            <div class="modal-body">
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-bullseye"></i> Business Problem</h4>
+                    <p>The company wanted to identify customers most likely to make a purchase to improve targeting and
+                        sales efficiency.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-database"></i> Dataset Description</h4>
+                    <p>Historical customer data including purchase history, engagement metrics, and demographic
+                        features.</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-tools"></i> Tools Used</h4>
+                    <p>Python, Pandas, Scikit-learn, Power BI</p>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-cogs"></i> Solution Approach</h4>
+                    <ul>
+                        <li>Performed feature engineering and data preparation</li>
+                        <li>Built and evaluated a predictive classification model</li>
+                        <li>Visualized prediction results and customer segments</li>
+                    </ul>
+                </div>
+
+                <div class="modal-section">
+                    <h4><i class="fas fa-lightbulb"></i> Key Insights & Results</h4>
+                    <ul>
+                        <li>Identified high-probability customer segments</li>
+                        <li>Improved targeting for marketing and sales campaigns</li>
+                        <li>Supported data-driven decision-making for customer outreach</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
